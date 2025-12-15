@@ -1,3 +1,6 @@
+@import "tailwindcss";
+
+
 :root {
 	--bg-body: #0f0f11;
 	--bg-card: #1c1c1e;
@@ -29,4 +32,14 @@ body {
 	/* align-items: center; */
 	/* min-height: 100vh; */
 	/* padding: 20px; */
+}
+
+.container {
+	/* display: grid; */
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto auto 1fr; 
+	/* gap: 16px; */
+	/* width: 100%;
+	max-width: 600px; */
+	height: 85vh;
 }
