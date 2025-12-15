@@ -4,16 +4,22 @@
   "description": "Node.js backend",
   "main": "server.js",
   "scripts": {
-	"start": "node server.js",
-	"dev" : "nodemon server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
-  "keywords": ["backend", "api", "node", "express"],
+  "keywords": [
+    "backend",
+    "api",
+    "node",
+    "express"
+  ],
   "author": "mohamed bentaleb",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^17.2.3",
     "express": "^4.19.2"
   },
   "devDependencies": {
-	"nodemon": "^3.0.3"
+    "nodemon": "^3.0.3"
   }
 }
