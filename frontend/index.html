@@ -11,9 +11,37 @@
 
 <body class="flex justify-center items-center min-h-screen">
 
-	<div class="container w-full max-w-screen-sm grid grid-cols-[1fr_1fr] grid-rows-[auto-auto-1fr] gap-16">
-		test
+	<div class="container">
+		<div class="card card-date">
+			<h2 id="current-day">Monday</h2>
+			<p id="current-date">Dec 15, 2015</p>
+		</div>
+
+		<div class="card card-progress">
+			<span class="progress-text">Daily Progress</span>
+			<span class="progress-percent" id="progress-percent">0%</span>
+			<div class="progress-bar-bg">
+				<div class="progress-fill" id="progress-fill"></div>
+			</div>
+		</div>
+
+		<div class="card card-input">
+			<input type="text" id="task-input" placeholder="Add a new task..." autocomplete="off">
+			<button class="add-btn" id="add-btn">+</button>
+		</div>
+
+		<div class="card card-list">
+			<ul id="task-list">
+				<!-- Tasks go here -->
+			</ul>
+			<div id="empty-state" class="empty-state">
+				<p>No tasks yet.<br>Time to get productive!</p>
+			</div>
+		</div>
+
 	</div>
+
+	<script src="./js/dashboard.js"></script>
 
 </body>
 
